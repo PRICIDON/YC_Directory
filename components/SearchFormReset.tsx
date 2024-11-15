@@ -4,7 +4,6 @@ import Link from "next/link";
 import { X } from "lucide-react";
 
 const SearchFormReset = () => {
-  const query = "Test";
   const reset = () => {
     const form = document.querySelector(".search-form") as HTMLFormElement;
     if (form) form.reset();
