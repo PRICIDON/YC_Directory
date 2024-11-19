@@ -16,6 +16,7 @@ const StartupForm = () => {
   const [pitch, setPitch] = useState("");
   const { toast } = useToast();
   const router = useRouter();
+  // @typescript-eslint/no-explicit-any
   const handleFormSubmit = async (prevState: any, formData: FormData) => {
     try {
       const formValues = {
@@ -65,6 +66,7 @@ const StartupForm = () => {
     errors: "",
     status: "INITIAL",
   });
+  console.log(state);
   return (
     <form action={formAction} className="startup-form">
       <div className="">
